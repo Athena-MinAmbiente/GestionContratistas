@@ -1,0 +1,766 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel cert_master_1 search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cert_califcumpli_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_califcumpli}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_califcumpli{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="cert_califcumpli" data-fieldname="cert_califcumpli" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_califcumpli}">
+		{$label cert_master_1 cert_califcumpli }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_califcumpli}
+	</div>
+	<div class="r-search-field">
+		{$cert_califcumpli_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_califcumpli_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_califcumpli_fieldblock}
+											
+{BEGIN cert_estado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_estado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_estado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="cert_estado" data-fieldname="cert_estado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_estado}">
+		{$label cert_master_1 cert_estado }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_estado}
+	</div>
+	<div class="r-search-field">
+		{$cert_estado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_estado_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_estado_fieldblock}
+											
+{BEGIN cert_fecha_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_fecha}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_fecha{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="cert_fecha" data-fieldname="cert_fecha" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_fecha}">
+		{$label cert_master_1 cert_fecha }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_fecha}
+	</div>
+	<div class="r-search-field">
+		{$cert_fecha_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_fecha_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_fecha_fieldblock}
+											
+{BEGIN cert_fechacarga_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_fechacarga}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_fechacarga{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="cert_fechacarga" data-fieldname="cert_fechacarga" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_fechacarga}">
+		{$label cert_master_1 cert_fechacarga }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_fechacarga}
+	</div>
+	<div class="r-search-field">
+		{$cert_fechacarga_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_fechacarga_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_fechacarga_fieldblock}
+											
+{BEGIN cert_file_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_file}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_file{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="cert_file" data-fieldname="cert_file" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_file}">
+		{$label cert_master_1 cert_file }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_file}
+	</div>
+	<div class="r-search-field">
+		{$cert_file_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_file_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_file_fieldblock}
+											
+{BEGIN cert_hash_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_hash}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_hash{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="cert_hash" data-fieldname="cert_hash" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_hash}">
+		{$label cert_master_1 cert_hash }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_hash}
+	</div>
+	<div class="r-search-field">
+		{$cert_hash_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_hash_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_hash_fieldblock}
+											
+{BEGIN cert_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="cert_id" data-fieldname="cert_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_id}">
+		{$label cert_master_1 cert_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_id}
+	</div>
+	<div class="r-search-field">
+		{$cert_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_id_fieldblock}
+											
+{BEGIN cert_mailnot_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_mailnot}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_mailnot{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="cert_mailnot" data-fieldname="cert_mailnot" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_mailnot}">
+		{$label cert_master_1 cert_mailnot }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_mailnot}
+	</div>
+	<div class="r-search-field">
+		{$cert_mailnot_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_mailnot_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_mailnot_fieldblock}
+											
+{BEGIN cert_mailsol_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_mailsol}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_mailsol{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="cert_mailsol" data-fieldname="cert_mailsol" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_mailsol}">
+		{$label cert_master_1 cert_mailsol }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_mailsol}
+	</div>
+	<div class="r-search-field">
+		{$cert_mailsol_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_mailsol_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_mailsol_fieldblock}
+											
+{BEGIN cert_obliga_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_obliga}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_obliga{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="cert_obliga" data-fieldname="cert_obliga" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_obliga}">
+		{$label cert_master_1 cert_obliga }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_obliga}
+	</div>
+	<div class="r-search-field">
+		{$cert_obliga_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_obliga_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_obliga_fieldblock}
+											
+{BEGIN cert_obs_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_obs}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_obs{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="cert_obs" data-fieldname="cert_obs" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_obs}">
+		{$label cert_master_1 cert_obs }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_obs}
+	</div>
+	<div class="r-search-field">
+		{$cert_obs_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_obs_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_obs_fieldblock}
+											
+{BEGIN id_cont_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_cont_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="id_cont_fk" data-fieldname="id_cont_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_cont_fk}">
+		{$label cert_master_1 id_cont_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_cont_fk}
+	</div>
+	<div class="r-search-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_cont_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_cont_fk_fieldblock}
+											
+{BEGIN sol_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sol_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="sol_user" data-fieldname="sol_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sol_user}">
+		{$label cert_master_1 sol_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sol_user}
+	</div>
+	<div class="r-search-field">
+		{$sol_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sol_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sol_user_fieldblock}
+											
+{BEGIN cert_status_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_status}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cert_status{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="cert_status" data-fieldname="cert_status" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cert_status}">
+		{$label cert_master_1 cert_status }	</label>
+	<div class="r-search-option">
+		{$searchtype_cert_status}
+	</div>
+	<div class="r-search-field">
+		{$cert_status_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cert_status_editcontrol1}
+	</div>
+	
+</div>
+
+{END cert_status_fieldblock}
+											
+{BEGIN cont_hash_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_hash_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cont_hash_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="cont_hash_fk" data-fieldname="cont_hash_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_hash_fk}">
+		{$label cert_master_1 cont_hash_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_hash_fk}
+	</div>
+	<div class="r-search-field">
+		{$cont_hash_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_hash_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_hash_fk_fieldblock}
+											
+{BEGIN cer_doc_num_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_doc_num}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_doc_num{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="cer_doc_num" data-fieldname="cer_doc_num" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_doc_num}">
+		{$label cert_master_1 cer_doc_num }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_doc_num}
+	</div>
+	<div class="r-search-field">
+		{$cer_doc_num_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_doc_num_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_doc_num_fieldblock}
+											
+{BEGIN cer_doc_tipo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_doc_tipo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_doc_tipo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="cer_doc_tipo" data-fieldname="cer_doc_tipo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_doc_tipo}">
+		{$label cert_master_1 cer_doc_tipo }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_doc_tipo}
+	</div>
+	<div class="r-search-field">
+		{$cer_doc_tipo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_doc_tipo_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_doc_tipo_fieldblock}
+											
+{BEGIN cer_estado_contrato_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_estado_contrato}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_estado_contrato{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="cer_estado_contrato" data-fieldname="cer_estado_contrato" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_estado_contrato}">
+		{$label cert_master_1 cer_estado_contrato }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_estado_contrato}
+	</div>
+	<div class="r-search-field">
+		{$cer_estado_contrato_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_estado_contrato_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_estado_contrato_fieldblock}
+											
+{BEGIN cer_fecha_fin_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_fecha_fin}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_fecha_fin{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="cer_fecha_fin" data-fieldname="cer_fecha_fin" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_fecha_fin}">
+		{$label cert_master_1 cer_fecha_fin }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_fecha_fin}
+	</div>
+	<div class="r-search-field">
+		{$cer_fecha_fin_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_fecha_fin_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_fecha_fin_fieldblock}
+											
+{BEGIN cer_fecha_inicio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_fecha_inicio}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_fecha_inicio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="cer_fecha_inicio" data-fieldname="cer_fecha_inicio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_fecha_inicio}">
+		{$label cert_master_1 cer_fecha_inicio }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_fecha_inicio}
+	</div>
+	<div class="r-search-field">
+		{$cer_fecha_inicio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_fecha_inicio_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_fecha_inicio_fieldblock}
+											
+{BEGIN cer_fecha_suscripcion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_fecha_suscripcion}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_fecha_suscripcion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="cer_fecha_suscripcion" data-fieldname="cer_fecha_suscripcion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_fecha_suscripcion}">
+		{$label cert_master_1 cer_fecha_suscripcion }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_fecha_suscripcion}
+	</div>
+	<div class="r-search-field">
+		{$cer_fecha_suscripcion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_fecha_suscripcion_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_fecha_suscripcion_fieldblock}
+											
+{BEGIN cer_nombres_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_nombres}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_nombres{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="cer_nombres" data-fieldname="cer_nombres" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_nombres}">
+		{$label cert_master_1 cer_nombres }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_nombres}
+	</div>
+	<div class="r-search-field">
+		{$cer_nombres_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_nombres_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_nombres_fieldblock}
+											
+{BEGIN cer_numcontrato_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_numcontrato}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_numcontrato{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="cer_numcontrato" data-fieldname="cer_numcontrato" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_numcontrato}">
+		{$label cert_master_1 cer_numcontrato }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_numcontrato}
+	</div>
+	<div class="r-search-field">
+		{$cer_numcontrato_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_numcontrato_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_numcontrato_fieldblock}
+											
+{BEGIN cer_objeto_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_objeto}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_objeto{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="cer_objeto" data-fieldname="cer_objeto" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_objeto}">
+		{$label cert_master_1 cer_objeto }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_objeto}
+	</div>
+	<div class="r-search-field">
+		{$cer_objeto_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_objeto_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_objeto_fieldblock}
+											
+{BEGIN cer_plazo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_plazo}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_plazo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="cer_plazo" data-fieldname="cer_plazo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_plazo}">
+		{$label cert_master_1 cer_plazo }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_plazo}
+	</div>
+	<div class="r-search-field">
+		{$cer_plazo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_plazo_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_plazo_fieldblock}
+											
+{BEGIN cer_valor_letra_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_valor_letra}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_valor_letra{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="cer_valor_letra" data-fieldname="cer_valor_letra" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_valor_letra}">
+		{$label cert_master_1 cer_valor_letra }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_valor_letra}
+	</div>
+	<div class="r-search-field">
+		{$cer_valor_letra_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_valor_letra_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_valor_letra_fieldblock}
+											
+{BEGIN cer_valor_num_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_valor_num}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_valor_num{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="cer_valor_num" data-fieldname="cer_valor_num" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_valor_num}">
+		{$label cert_master_1 cer_valor_num }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_valor_num}
+	</div>
+	<div class="r-search-field">
+		{$cer_valor_num_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_valor_num_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_valor_num_fieldblock}
+											
+{BEGIN cer_vigencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_vigencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cer_vigencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="cer_vigencia" data-fieldname="cer_vigencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cer_vigencia}">
+		{$label cert_master_1 cer_vigencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_cer_vigencia}
+	</div>
+	<div class="r-search-field">
+		{$cer_vigencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cer_vigencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END cer_vigencia_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

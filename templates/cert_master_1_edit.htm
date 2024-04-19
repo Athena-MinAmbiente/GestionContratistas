@@ -1,0 +1,986 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit"   
+		>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px"  class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{BEGIN menuitems_main}
+<ul data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}"	class="r-menu nav menu-treelike" 
+	data-menulevel="1"
+>
+
+{BEGIN item_children1}
+<li class="
+	{$item_current}">
+<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline data-menu-top >
+	{$item_separator}
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+		<span class="r-menu-collapsed">{$item_collicon}{$item_firstcap}</span>
+	</a>
+{BEGIN item_showchildren2}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="2">
+	{BEGIN item_children2}
+		{BEGIN item_menulink2}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren2}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren2}
+	</span>
+	</a>
+			{BEGIN item_showchildren3}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="3">
+	{BEGIN item_children3}
+		{BEGIN item_menulink3}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren3}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren3}
+	</span>
+	</a>
+			{BEGIN item_showchildren4}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="4">
+	{BEGIN item_children4}
+		{BEGIN item_menulink4}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren4}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren4}
+	</span>
+	</a>
+			{BEGIN item_showchildren5}
+<ul class="
+			nav collapse 
+			{$submenu_class}" 
+		id="submenu{$item_id}" data-menulevel="5">
+	{BEGIN item_children5}
+		{BEGIN item_menulink5}
+		<li class="
+						{$item_current}"
+		>
+			<a {$item_attrs} title="{$item_tooltip}" data-menu-link data-menu-v data-menu-inline >
+	{$item_separator}
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		{$item_icon} {$item_title}
+		</span>
+		{BEGIN item_haschildren5}
+		{BEGIN item_expand_icon}
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		{END item_expand_icon}
+		{END item_haschildren5}
+	</span>
+	</a>
+					</li>
+		{END item_menulink5}
+	{END item_children5}
+</ul>
+{END item_showchildren5}
+		</li>
+		{END item_menulink4}
+	{END item_children4}
+</ul>
+{END item_showchildren4}
+		</li>
+		{END item_menulink3}
+	{END item_children3}
+</ul>
+{END item_showchildren3}
+		</li>
+		{END item_menulink2}
+	{END item_children2}
+</ul>
+{END item_showchildren2}
+</li>
+{END item_children1}
+</ul>
+{END menuitems_main}
+			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="expand_menu_button" {$item_expand_menu_button} data-topcell-item-type="expand_menu_button" >
+				<span data-itemtype="expand_menu_button" data-itemid="expand_menu_button" {$item_expand_menu_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Encubrir" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+							{BEGIN changepwd_link}
+	<li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+				<a  href="changepwd.php" {$changepwdlink_attrs} id="changePasswordButton{$id}"  title="" >
+				
+		Cambiar contraseña		
+		</a>
+	</li>
+{END changepwd_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel cert_master_1 edit}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+						</div>
+											<div class="r-above">
+					{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="cert_master_1_view.php?{$editlink}" {$view_page_button_attrs}>Ver</a>
+{END message_view_page_button}
+</div>
+</div>
+			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+	</div>
+<div class="r-grid">
+	{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+					{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_cont_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-vertical-field" 
+	data-signal-error-for="id_cont_fk{$id}" {$required_attr_id_cont_fk}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="id_cont_fk" data-fieldname="id_cont_fk" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_cont_fk}">
+		{BEGIN id_cont_fk_label}{$label cert_master_1 id_cont_fk }{END id_cont_fk_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_cont_fk" {$tooltipAttr cert_master_1 id_cont_fk } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 id_cont_fk }		</div>
+	</div>
+</div>
+
+
+{END id_cont_fk_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sol_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sol_user}  r-vertical-field" 
+	data-signal-error-for="sol_user{$id}" {$required_attr_sol_user}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="sol_user" data-fieldname="sol_user" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_sol_user}">
+		{BEGIN sol_user_label}{$label cert_master_1 sol_user }{END sol_user_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$sol_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sol_user" {$tooltipAttr cert_master_1 sol_user } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 sol_user }		</div>
+	</div>
+</div>
+
+
+{END sol_user_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cert_califcumpli_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_califcumpli}  r-vertical-field" 
+	data-signal-error-for="cert_califcumpli{$id}" {$required_attr_cert_califcumpli}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="cert_califcumpli" data-fieldname="cert_califcumpli" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cert_califcumpli}">
+		{BEGIN cert_califcumpli_label}{$label cert_master_1 cert_califcumpli }{END cert_califcumpli_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cert_califcumpli_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cert_califcumpli" {$tooltipAttr cert_master_1 cert_califcumpli } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cert_califcumpli }		</div>
+	</div>
+</div>
+
+
+{END cert_califcumpli_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cert_mailnot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_mailnot}  r-vertical-field" 
+	data-signal-error-for="cert_mailnot{$id}" {$required_attr_cert_mailnot}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="cert_mailnot" data-fieldname="cert_mailnot" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cert_mailnot}">
+		{BEGIN cert_mailnot_label}{$label cert_master_1 cert_mailnot }{END cert_mailnot_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cert_mailnot_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cert_mailnot" {$tooltipAttr cert_master_1 cert_mailnot } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cert_mailnot }		</div>
+	</div>
+</div>
+
+
+{END cert_mailnot_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+														<tr {$row_grid_2} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			
+	ocolspan="2"		data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cert_obs_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_obs}  r-vertical-field" 
+	data-signal-error-for="cert_obs{$id}" {$required_attr_cert_obs}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="cert_obs" data-fieldname="cert_obs" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cert_obs}">
+		{BEGIN cert_obs_label}{$label cert_master_1 cert_obs }{END cert_obs_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cert_obs_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cert_obs" {$tooltipAttr cert_master_1 cert_obs } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cert_obs }		</div>
+	</div>
+</div>
+
+
+{END cert_obs_fieldblock}
+											
+{BEGIN cert_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cert_status}  r-vertical-field" 
+	data-signal-error-for="cert_status{$id}" {$required_attr_cert_status}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="cert_status" data-fieldname="cert_status" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cert_status}">
+		{BEGIN cert_status_label}{$label cert_master_1 cert_status }{END cert_status_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cert_status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cert_status" {$tooltipAttr cert_master_1 cert_status } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cert_status }		</div>
+	</div>
+</div>
+
+
+{END cert_status_fieldblock}
+											
+{BEGIN cont_hash_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_hash_fk}  r-vertical-field" 
+	data-signal-error-for="cont_hash_fk{$id}" {$required_attr_cont_hash_fk}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="cont_hash_fk" data-fieldname="cont_hash_fk" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_hash_fk}">
+		{BEGIN cont_hash_fk_label}{$label cert_master_1 cont_hash_fk }{END cont_hash_fk_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cont_hash_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_hash_fk" {$tooltipAttr cert_master_1 cont_hash_fk } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cont_hash_fk }		</div>
+	</div>
+</div>
+
+
+{END cont_hash_fk_fieldblock}
+											
+{BEGIN cer_doc_num_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_doc_num}  r-vertical-field" 
+	data-signal-error-for="cer_doc_num{$id}" {$required_attr_cer_doc_num}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="cer_doc_num" data-fieldname="cer_doc_num" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_doc_num}">
+		{BEGIN cer_doc_num_label}{$label cert_master_1 cer_doc_num }{END cer_doc_num_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_doc_num_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_doc_num" {$tooltipAttr cert_master_1 cer_doc_num } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_doc_num }		</div>
+	</div>
+</div>
+
+
+{END cer_doc_num_fieldblock}
+											
+{BEGIN cer_doc_tipo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_doc_tipo}  r-vertical-field" 
+	data-signal-error-for="cer_doc_tipo{$id}" {$required_attr_cer_doc_tipo}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="cer_doc_tipo" data-fieldname="cer_doc_tipo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_doc_tipo}">
+		{BEGIN cer_doc_tipo_label}{$label cert_master_1 cer_doc_tipo }{END cer_doc_tipo_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_doc_tipo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_doc_tipo" {$tooltipAttr cert_master_1 cer_doc_tipo } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_doc_tipo }		</div>
+	</div>
+</div>
+
+
+{END cer_doc_tipo_fieldblock}
+											
+{BEGIN cer_estado_contrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_estado_contrato}  r-vertical-field" 
+	data-signal-error-for="cer_estado_contrato{$id}" {$required_attr_cer_estado_contrato}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="cer_estado_contrato" data-fieldname="cer_estado_contrato" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_estado_contrato}">
+		{BEGIN cer_estado_contrato_label}{$label cert_master_1 cer_estado_contrato }{END cer_estado_contrato_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_estado_contrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_estado_contrato" {$tooltipAttr cert_master_1 cer_estado_contrato } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_estado_contrato }		</div>
+	</div>
+</div>
+
+
+{END cer_estado_contrato_fieldblock}
+											
+{BEGIN cer_fecha_fin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_fecha_fin}  r-vertical-field" 
+	data-signal-error-for="cer_fecha_fin{$id}" {$required_attr_cer_fecha_fin}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="cer_fecha_fin" data-fieldname="cer_fecha_fin" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_fecha_fin}">
+		{BEGIN cer_fecha_fin_label}{$label cert_master_1 cer_fecha_fin }{END cer_fecha_fin_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_fecha_fin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_fecha_fin" {$tooltipAttr cert_master_1 cer_fecha_fin } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_fecha_fin }		</div>
+	</div>
+</div>
+
+
+{END cer_fecha_fin_fieldblock}
+											
+{BEGIN cer_fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_fecha_inicio}  r-vertical-field" 
+	data-signal-error-for="cer_fecha_inicio{$id}" {$required_attr_cer_fecha_inicio}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="cer_fecha_inicio" data-fieldname="cer_fecha_inicio" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_fecha_inicio}">
+		{BEGIN cer_fecha_inicio_label}{$label cert_master_1 cer_fecha_inicio }{END cer_fecha_inicio_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_fecha_inicio_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_fecha_inicio" {$tooltipAttr cert_master_1 cer_fecha_inicio } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_fecha_inicio }		</div>
+	</div>
+</div>
+
+
+{END cer_fecha_inicio_fieldblock}
+											
+{BEGIN cer_fecha_suscripcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_fecha_suscripcion}  r-vertical-field" 
+	data-signal-error-for="cer_fecha_suscripcion{$id}" {$required_attr_cer_fecha_suscripcion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="cer_fecha_suscripcion" data-fieldname="cer_fecha_suscripcion" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_fecha_suscripcion}">
+		{BEGIN cer_fecha_suscripcion_label}{$label cert_master_1 cer_fecha_suscripcion }{END cer_fecha_suscripcion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_fecha_suscripcion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_fecha_suscripcion" {$tooltipAttr cert_master_1 cer_fecha_suscripcion } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_fecha_suscripcion }		</div>
+	</div>
+</div>
+
+
+{END cer_fecha_suscripcion_fieldblock}
+											
+{BEGIN cer_nombres_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_nombres}  r-vertical-field" 
+	data-signal-error-for="cer_nombres{$id}" {$required_attr_cer_nombres}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="cer_nombres" data-fieldname="cer_nombres" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_nombres}">
+		{BEGIN cer_nombres_label}{$label cert_master_1 cer_nombres }{END cer_nombres_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_nombres_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_nombres" {$tooltipAttr cert_master_1 cer_nombres } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_nombres }		</div>
+	</div>
+</div>
+
+
+{END cer_nombres_fieldblock}
+											
+{BEGIN cer_numcontrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_numcontrato}  r-vertical-field" 
+	data-signal-error-for="cer_numcontrato{$id}" {$required_attr_cer_numcontrato}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="cer_numcontrato" data-fieldname="cer_numcontrato" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_numcontrato}">
+		{BEGIN cer_numcontrato_label}{$label cert_master_1 cer_numcontrato }{END cer_numcontrato_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_numcontrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_numcontrato" {$tooltipAttr cert_master_1 cer_numcontrato } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_numcontrato }		</div>
+	</div>
+</div>
+
+
+{END cer_numcontrato_fieldblock}
+											
+{BEGIN cer_objeto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_objeto}  r-vertical-field" 
+	data-signal-error-for="cer_objeto{$id}" {$required_attr_cer_objeto}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="cer_objeto" data-fieldname="cer_objeto" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_objeto}">
+		{BEGIN cer_objeto_label}{$label cert_master_1 cer_objeto }{END cer_objeto_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_objeto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_objeto" {$tooltipAttr cert_master_1 cer_objeto } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_objeto }		</div>
+	</div>
+</div>
+
+
+{END cer_objeto_fieldblock}
+											
+{BEGIN cer_plazo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_plazo}  r-vertical-field" 
+	data-signal-error-for="cer_plazo{$id}" {$required_attr_cer_plazo}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="cer_plazo" data-fieldname="cer_plazo" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_plazo}">
+		{BEGIN cer_plazo_label}{$label cert_master_1 cer_plazo }{END cer_plazo_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_plazo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_plazo" {$tooltipAttr cert_master_1 cer_plazo } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_plazo }		</div>
+	</div>
+</div>
+
+
+{END cer_plazo_fieldblock}
+											
+{BEGIN cer_valor_letra_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_valor_letra}  r-vertical-field" 
+	data-signal-error-for="cer_valor_letra{$id}" {$required_attr_cer_valor_letra}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="cer_valor_letra" data-fieldname="cer_valor_letra" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_valor_letra}">
+		{BEGIN cer_valor_letra_label}{$label cert_master_1 cer_valor_letra }{END cer_valor_letra_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_valor_letra_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_valor_letra" {$tooltipAttr cert_master_1 cer_valor_letra } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_valor_letra }		</div>
+	</div>
+</div>
+
+
+{END cer_valor_letra_fieldblock}
+											
+{BEGIN cer_valor_num_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_valor_num}  r-vertical-field" 
+	data-signal-error-for="cer_valor_num{$id}" {$required_attr_cer_valor_num}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="cer_valor_num" data-fieldname="cer_valor_num" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_valor_num}">
+		{BEGIN cer_valor_num_label}{$label cert_master_1 cer_valor_num }{END cer_valor_num_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_valor_num_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_valor_num" {$tooltipAttr cert_master_1 cer_valor_num } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_valor_num }		</div>
+	</div>
+</div>
+
+
+{END cer_valor_num_fieldblock}
+											
+{BEGIN cer_vigencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cer_vigencia}  r-vertical-field" 
+	data-signal-error-for="cer_vigencia{$id}" {$required_attr_cer_vigencia}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="cer_vigencia" data-fieldname="cer_vigencia" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_cer_vigencia}">
+		{BEGIN cer_vigencia_label}{$label cert_master_1 cer_vigencia }{END cer_vigencia_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cer_vigencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cer_vigencia" {$tooltipAttr cert_master_1 cer_vigencia } >
+		<div class="text-muted" >
+		{$tooltip cert_master_1 cer_vigencia }		</div>
+	</div>
+</div>
+
+
+{END cer_vigencia_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+	</div>
+<div class="r-below">
+					{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="cert_master_1_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+	</div>
+
+
+
+
+										{$footer}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

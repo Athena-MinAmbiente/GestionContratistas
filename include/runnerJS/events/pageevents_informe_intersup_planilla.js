@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('informe_intersup_planilla',Runner.pages.constants.PAGE_EDIT,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrl=Runner.getControl(pageid,'tipo_administradora');ctrl.makeReadonly();});
